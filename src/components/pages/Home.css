@@ -1,0 +1,95 @@
+/* Styling for the first section with the image */
+.first-section {
+  padding-top: 60px;
+  position: relative; /* Ensures that elements can be positioned relative to this section */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevents image overflow */
+}
+
+.section-image {
+  width: 100%; /* Make the image span the full width of the container */
+  height: 100%; /* Make the image take full height of the section */
+  object-fit: fill; /* Ensure the image covers the entire section without distortion */
+  display: block; /* Prevents extra space below the image */
+}
+
+/* Second section styling */
+.second-section {
+  padding: 50px 20px; /* Space around the section */
+  text-align: center; /* Center text in the section */
+}
+
+/* Deals title with dashes */
+.deals-title {
+  font-size: 36px; /* Large size for the title */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px; /* Space between title and links */
+  text-transform: uppercase;
+  position: relative;
+}
+
+.deals-title::before,
+.deals-title::after {
+  content: "—"; /* The dash character */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px; /* Size of the dashes */
+  color: #333; /* Color of the dashes */
+}
+
+.deals-title::before {
+  left: -50px; /* Adjust the distance of the left dash */
+}
+
+.deals-title::after {
+  right: -50px; /* Adjust the distance of the right dash */
+}
+
+/* Centered and spaced links */
+.deals-links ul {
+  display: flex;
+  justify-content: space-between; /* Space between the links */
+  padding: 0;
+  list-style: none; /* Remove default list styling */
+}
+
+.deals-links li {
+  flex: 1; /* Ensure each list item takes equal width */
+}
+
+.deal-link {
+  display: block;
+  font-size: 24px; /* Set font size for links */
+  font-weight: bold;
+  color: #333; /* Dark color for links */
+  padding: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover transition */
+  text-align: center; /* Center text in the link */
+}
+
+/* Hover effect for links */
+.deal-link:hover {
+  color: silver; /* Silver text color on hover */
+  background-color: black; /* Black background on hover */
+  color: white; /* White text on hover */
+}
+
+/* Styling for the second section */
+.last-section {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light background for the last section */
+  text-align: center;
+}
+
+.last-section h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.last-section p {
+  font-size: 1rem;
+  color: #555;
+}
