@@ -49,12 +49,6 @@ const Cards = () => {
       title: "Card Title 3",
       description: "Description for card 3",
     },
-    {
-      id: 8,
-      image: "clothimage.jpg",
-      title: "Card Title 4",
-      description: "Description for card 4",
-    },
   ];
 
   // Uncomment the following code and replace the URL when you have the API endpoint
